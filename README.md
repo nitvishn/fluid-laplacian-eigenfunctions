@@ -15,11 +15,11 @@ pip install -r requirements.txt
 python main.py
 ```
 
-The output video will be in sim_id/sim_id_particles.mp4, and the current frame is maintained in sim_id/sim_id_current.png if you'd like to monitor the output. 
+The output video will be in `sim_id/sim_id_particles.mp4`, and the current frame is maintained in `sim_id/sim_id_current.png` if you'd like to monitor the output. 
 
-I've attached 3 video files in extras/, all at resolution=512x512:
-- res_512_n_9.mp4: 9 eigenfunctions
-- res_512_N_49.mp4: 49 eigenfunctions
-- res_512_N_196.mp4: 196 eigenfunctions
+I've attached 3 video files in `extras/`, all at resolution=512x512:
+- `res_512_n_9.mp4`: 9 eigenfunctions
+- `res_512_N_49.mp4`: 49 eigenfunctions
+- `res_512_N_196.mp4`: 196 eigenfunctions
 
 I enjoyed this course very much, have a wonderful winter break!
