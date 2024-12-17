@@ -1,4 +1,9 @@
-This is an implementation of [Fluid Simulation using Laplacian Eigenfunctions](https://dl.acm.org/doi/10.1145/2077341.2077351). 
+This is an implementation of [Fluid Simulation using Laplacian Eigenfunctions](https://dl.acm.org/doi/10.1145/2077341.2077351). To test:
+
+```
+pip install -r requirements.txt
+python main.py
+```
 
 My simulation takes place on the domain $[0, \pi]^2$, representing the fluid in a finite basis of Laplacian eigenfunctions. I use the analytical expressions of the eigenfunctions on this domain. 
 
@@ -9,11 +14,6 @@ Note that the simulation _almost_ does not see the grid and the particles, they 
 Most of the run time is spent advecting the particles, of which I use tens of thousands. The simulation itself is some orders of magnitude faster than this implementation would suggest. This is seen by setting the number of particles to like, 100..
 
 There's no data required to run the simulation, simply install the required packages and run `main.py`. I developed this on a MacBook with an M1 Pro chip. I used PyTorch thinking I would support all operations on the GPU, but I didn't get around to this in time. 
-
-```
-pip install -r requirements.txt
-python main.py
-```
 
 The output video will be in `sim_id/sim_id_particles.mp4`, and the current frame is maintained in `sim_id/sim_id_current.png` if you'd like to monitor the output. 
 
